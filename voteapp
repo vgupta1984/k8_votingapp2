@@ -1,0 +1,201 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2024.10.29 13:14:28 =~=~=~=~=~=~=~=~=~=~=~=
+sudo -i
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# kubec[K[K[K[K[K
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# 
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# 
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# ls -lrth
+[?2004ltotal 32K
+drwxr-x---  6 root root 4.0K Sep 17 19:43 [0m[01;34mistio-1.23.2[0m
+drwx------  4 root root 4.0K Oct 18 05:27 [01;34msnap[0m
+-rw-r--r--  1 root root  176 Oct 18 07:21 token.txt
+drwxr-xr-x 20 root root 4.0K Oct 21 07:28 [01;34mkubernetes-training[0m
+drwxr-xr-x  8 root root 4.0K Oct 24 04:20 [01;34mexample-voting-app[0m
+drwxr-xr-x  5 root root  12K Oct 28 06:00 [01;34mK8srep[0m
+[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# rm -rf [7mexample-voting-app[27mexample-voting-app
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# [7mkubectl delete all --all;[27m[1Pkubectl delete all --all[Kl
+[?2004lservice "kubernetes" deleted
+[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# kub[K[K[K[7mcd $home[27mcd $home
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# 
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# 
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# 
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# [7myum install git -y[27myum install git -y
+[?2004lCommand 'yum' not found, did you mean:
+  command 'gum' from snap gum (0.13.0)
+  command 'uum' from deb freewnn-jserver (1.1.1~a021+cvs20130302-7build1)
+  command 'zum' from deb perforate (1.2-5.1)
+  command 'yum4' from deb nextgen-yum4 (4.5.2-6)
+  command 'sum' from deb coreutils (8.32-4.1ubuntu1.2)
+  command 'num' from deb quickcal (2.4-1)
+See 'snap info <snapname>' for additional versions.
+[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# 
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# 
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# apt -[K[K[K[K[Kapt[K[K[K[7mgit clone  https://github.com/ashishrpandey/example-voting-app[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone  https://github.com/ashishrpandey/example-voting-app
+[?2004lCloning into 'example-voting-app'...
+remote: Enumerating objects: 494, done.[K
+Receiving objects:   0% (1/494)Receiving objects:   1% (5/494)Receiving objects:   2% (10/494)Receiving objects:   3% (15/494)Receiving objects:   4% (20/494)Receiving objects:   5% (25/494)Receiving objects:   6% (30/494)Receiving objects:   7% (35/494)Receiving objects:   8% (40/494)Receiving objects:   9% (45/494)Receiving objects:  10% (50/494)Receiving objects:  11% (55/494)Receiving objects:  12% (60/494)Receiving objects:  13% (65/494)Receiving objects:  14% (70/494)Receiving objects:  15% (75/494)Receiving objects:  16% (80/494)Receiving objects:  17% (84/494)Receiving objects:  18% (89/494)Receiving objects:  19% (94/494)Receiving objects:  20% (99/494)Receiving objects:  21% (104/494)Receiving objects:  22% (109/494)Receiving objects:  23% (114/494)Receiving objects:  24% (119/494)Receiving objects:  25% (124/494)Receiving objects:  26% (129/494)Receiving objects:  27% (134/494)Receiving objects:  28% (139/494)Receiving objects:  29% (144/494)Receiving objects:  30% (149/494)Receiving objects:  31% (154/494)Receiving objects:  32% (159/494)Receiving objects:  33% (164/494)Receiving objects:  34% (168/494)Receiving objects:  35% (173/494)Receiving objects:  36% (178/494)Receiving objects:  37% (183/494)Receiving objects:  38% (188/494)Receiving objects:  39% (193/494)Receiving objects:  40% (198/494)Receiving objects:  41% (203/494)Receiving objects:  42% (208/494)Receiving objects:  43% (213/494)Receiving objects:  44% (218/494)Receiving objects:  45% (223/494)Receiving objects:  46% (228/494)Receiving objects:  47% (233/494)Receiving objects:  48% (238/494)Receiving objects:  49% (243/494)Receiving objects:  50% (247/494)Receiving objects:  51% (252/494)Receiving objects:  52% (257/494)Receiving objects:  53% (262/494)Receiving objects:  54% (267/494)Receiving objects:  55% (272/494)Receiving objects:  56% (277/494)Receiving objects:  57% (282/494)Receiving objects:  58% (287/494)Receiving objects:  59% (292/494)Receiving objects:  60% (297/494)Receiving objects:  61% (302/494)Receiving objects:  62% (307/494)Receiving objects:  63% (312/494)Receiving objects:  64% (317/494)Receiving objects:  65% (322/494)Receiving objects:  66% (327/494)Receiving objects:  67% (331/494)Receiving objects:  68% (336/494)Receiving objects:  69% (341/494)Receiving objects:  70% (346/494)Receiving objects:  71% (351/494)Receiving objects:  72% (356/494)Receiving objects:  73% (361/494)Receiving objects:  74% (366/494)Receiving objects:  75% (371/494)Receiving objects:  76% (376/494)Receiving objects:  77% (381/494)Receiving objects:  78% (386/494)remote: Total 494 (delta 0), reused 0 (delta 0), pack-reused 494 (from 1)[K
+Receiving objects:  79% (391/494)Receiving objects:  80% (396/494)Receiving objects:  81% (401/494)Receiving objects:  82% (406/494)Receiving objects:  83% (411/494)Receiving objects:  84% (415/494)Receiving objects:  85% (420/494)Receiving objects:  86% (425/494)Receiving objects:  87% (430/494)Receiving objects:  88% (435/494)Receiving objects:  89% (440/494)Receiving objects:  90% (445/494)Receiving objects:  91% (450/494)Receiving objects:  92% (455/494)Receiving objects:  93% (460/494)Receiving objects:  94% (465/494)Receiving objects:  95% (470/494)Receiving objects:  96% (475/494)Receiving objects:  97% (480/494)Receiving objects:  98% (485/494)Receiving objects:  99% (490/494)Receiving objects: 100% (494/494)Receiving objects: 100% (494/494), 236.33 KiB | 13.13 MiB/s, done.
+Resolving deltas:   0% (0/178)Resolving deltas:   1% (2/178)Resolving deltas:   2% (4/178)Resolving deltas:   3% (6/178)Resolving deltas:   4% (8/178)Resolving deltas:   5% (9/178)Resolving deltas:   6% (11/178)Resolving deltas:   7% (13/178)Resolving deltas:   8% (15/178)Resolving deltas:   9% (17/178)Resolving deltas:  10% (18/178)Resolving deltas:  11% (20/178)Resolving deltas:  12% (22/178)Resolving deltas:  13% (24/178)Resolving deltas:  14% (25/178)Resolving deltas:  15% (27/178)Resolving deltas:  16% (29/178)Resolving deltas:  17% (31/178)Resolving deltas:  18% (33/178)Resolving deltas:  19% (34/178)Resolving deltas:  20% (36/178)Resolving deltas:  21% (38/178)Resolving deltas:  22% (40/178)Resolving deltas:  23% (41/178)Resolving deltas:  24% (43/178)Resolving deltas:  25% (45/178)Resolving deltas:  26% (47/178)Resolving deltas:  27% (49/178)Resolving deltas:  28% (50/178)Resolving deltas:  29% (52/178)Resolving deltas:  30% (54/178)Resolving deltas:  31% (56/178)Resolving deltas:  32% (57/178)Resolving deltas:  33% (59/178)Resolving deltas:  34% (61/178)Resolving deltas:  35% (63/178)Resolving deltas:  36% (65/178)Resolving deltas:  37% (66/178)Resolving deltas:  38% (68/178)Resolving deltas:  39% (70/178)Resolving deltas:  40% (72/178)Resolving deltas:  41% (73/178)Resolving deltas:  42% (75/178)Resolving deltas:  43% (77/178)Resolving deltas:  44% (79/178)Resolving deltas:  45% (81/178)Resolving deltas:  46% (82/178)Resolving deltas:  47% (84/178)Resolving deltas:  48% (86/178)Resolving deltas:  49% (88/178)Resolving deltas:  50% (89/178)Resolving deltas:  51% (91/178)Resolving deltas:  52% (93/178)Resolving deltas:  53% (95/178)Resolving deltas:  54% (97/178)Resolving deltas:  55% (98/178)Resolving deltas:  56% (100/178)Resolving deltas:  57% (102/178)Resolving deltas:  58% (104/178)Resolving deltas:  59% (106/178)Resolving deltas:  60% (107/178)Resolving deltas:  61% (109/178)Resolving deltas:  62% (111/178)Resolving deltas:  63% (113/178)Resolving deltas:  64% (114/178)Resolving deltas:  65% (116/178)Resolving deltas:  66% (118/178)Resolving deltas:  67% (120/178)Resolving deltas:  68% (122/178)Resolving deltas:  69% (123/178)Resolving deltas:  70% (125/178)Resolving deltas:  71% (127/178)Resolving deltas:  72% (129/178)Resolving deltas:  73% (130/178)Resolving deltas:  74% (132/178)Resolving deltas:  75% (134/178)Resolving deltas:  76% (136/178)Resolving deltas:  77% (138/178)Resolving deltas:  78% (139/178)Resolving deltas:  79% (141/178)Resolving deltas:  80% (143/178)Resolving deltas:  81% (145/178)Resolving deltas:  82% (146/178)Resolving deltas:  83% (148/178)Resolving deltas:  84% (150/178)Resolving deltas:  85% (152/178)Resolving deltas:  86% (154/178)Resolving deltas:  87% (155/178)Resolving deltas:  88% (157/178)Resolving deltas:  89% (159/178)Resolving deltas:  90% (161/178)Resolving deltas:  91% (162/178)Resolving deltas:  92% (164/178)Resolving deltas:  93% (166/178)Resolving deltas:  94% (168/178)Resolving deltas:  95% (170/178)Resolving deltas:  96% (171/178)Resolving deltas:  97% (173/178)Resolving deltas:  98% (175/178)Resolving deltas:  99% (177/178)Resolving deltas: 100% (178/178)Resolving deltas: 100% (178/178), done.
+[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# ls -lrth
+[?2004ltotal 32K
+drwxr-x---  6 root root 4.0K Sep 17 19:43 [0m[01;34mistio-1.23.2[0m
+drwx------  4 root root 4.0K Oct 18 05:27 [01;34msnap[0m
+-rw-r--r--  1 root root  176 Oct 18 07:21 token.txt
+drwxr-xr-x 20 root root 4.0K Oct 21 07:28 [01;34mkubernetes-training[0m
+drwxr-xr-x  5 root root  12K Oct 28 06:00 [01;34mK8srep[0m
+drwxr-xr-x  8 root root 4.0K Oct 29 07:49 [01;34mexample-voting-app[0m
+[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# [7m/root/example-voting-app[27m/root/example-voting-app
+[?2004l-bash: /root/example-voting-app: Is a directory
+[?2004h]0;root@ip-172-31-42-16: ~root@ip-172-31-42-16:~# cd [7m/root/example-voting-app[27m/root/example-voting-app
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~/example-voting-approot@ip-172-31-42-16:~/example-voting-app# ls -lrth
+[?2004ltotal 112K
+-rw-r--r-- 1 root root  54K Oct 29 07:49 [0m[01;35marchitecture.png[0m
+-rw-r--r-- 1 root root 2.2K Oct 29 07:49 README.md
+-rw-r--r-- 1 root root  185 Oct 29 07:49 MAINTAINERS
+-rw-r--r-- 1 root root  11K Oct 29 07:49 LICENSE
+drwxr-xr-x 5 root root 4.0K Oct 29 07:49 [01;34mresult[0m
+drwxr-xr-x 2 root root 4.0K Oct 29 07:49 [01;34mk8s-specifications[0m
+-rw-r--r-- 1 root root  609 Oct 29 07:49 dockercloud.yml
+-rw-r--r-- 1 root root 1.7K Oct 29 07:49 docker-stack.yml
+-rw-r--r-- 1 root root  808 Oct 29 07:49 docker-compose.yml
+-rw-r--r-- 1 root root  400 Oct 29 07:49 docker-compose-simple.yml
+-rw-r--r-- 1 root root  808 Oct 29 07:49 docker-compose-javaworker.yml
+drwxr-xr-x 3 root root 4.0K Oct 29 07:49 [01;34mworker[0m
+drwxr-xr-x 4 root root 4.0K Oct 29 07:49 [01;34mvote[0m
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-approot@ip-172-31-42-16:~/example-voting-app# cd [7mk8s-specifications[27mk8s-specifications
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# ls -lrth
+[?2004ltotal 36K
+-rw-r--r-- 1 root root 292 Oct 29 07:49 worker-deployment.yaml
+-rw-r--r-- 1 root root 192 Oct 29 07:49 vote-service.yaml
+-rw-r--r-- 1 root root 289 Oct 29 07:49 vote-deployment.yaml
+-rw-r--r-- 1 root root 195 Oct 29 07:49 result-service.yaml
+-rw-r--r-- 1 root root 299 Oct 29 07:49 result-deployment.yaml
+-rw-r--r-- 1 root root 152 Oct 29 07:49 redis-service.yaml
+-rw-r--r-- 1 root root 402 Oct 29 07:49 redis-deployment.yaml
+-rw-r--r-- 1 root root 146 Oct 29 07:49 db-service.yaml
+-rw-r--r-- 1 root root 401 Oct 29 07:49 db-deployment.yaml
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# [7mkubectl apply -f .[27mkubectl apply -f .
+[?2004ldeployment.apps/db created
+service/db created
+deployment.apps/redis created
+service/redis created
+deployment.apps/result created
+service/result created
+deployment.apps/vote created
+service/vote created
+deployment.apps/worker created
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# [7m kubectl get all [27m kubectl get all 
+[?2004lNAME                          READY   STATUS              RESTARTS   AGE
+pod/db-58cc845644-nlppn       0/1     ContainerCreating   0          9s
+pod/redis-6878558678-hdlxd    0/1     ContainerCreating   0          9s
+pod/result-86bc6f7b5d-hstcd   0/1     ContainerCreating   0          9s
+pod/vote-7d884dd585-gdf6g     0/1     ContainerCreating   0          9s
+pod/worker-6fc5d5b668-82wzw   0/1     ContainerCreating   0          9s
+
+NAME                 TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+service/db           ClusterIP   10.96.95.156     <none>        5432/TCP         9s
+service/kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP          4m52s
+service/redis        ClusterIP   10.110.65.84     <none>        6379/TCP         9s
+service/result       NodePort    10.105.193.124   <none>        5001:31001/TCP   9s
+service/vote         NodePort    10.102.177.64    <none>        5000:31000/TCP   9s
+
+NAME                     READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/db       0/1     1            0           9s
+deployment.apps/redis    0/1     1            0           9s
+deployment.apps/result   0/1     1            0           9s
+deployment.apps/vote     0/1     1            0           9s
+deployment.apps/worker   0/1     1            0           9s
+
+NAME                                DESIRED   CURRENT   READY   AGE
+replicaset.apps/db-58cc845644       1         1         0       9s
+replicaset.apps/redis-6878558678    1         1         0       9s
+replicaset.apps/result-86bc6f7b5d   1         1         0       9s
+replicaset.apps/vote-7d884dd585     1         1         0       9s
+replicaset.apps/worker-6fc5d5b668   1         1         0       9s
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# watch 
+Display all 1575 possibilities? (y or n)
+]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# watch get pods
+[?2004l[?1049h[22;0;0t[1;49r(B[m[4l[?7h[H[2JEvery 2.0s: get pods[1;117Hip-172-31-42-16: Tue Oct 29 07:53:08 2024[3;1Hsh: 1: get: not found[49;157H[1;151H10[49;157H[1;152H2[49;157H[1;152H4[49;157H[1;152H6[49;157H[1;152H8[49;157H[1;151H20[49;157H[1;152H2[49;157H[1;152H4[49;157H[1;152H6[49;157H[49;1H[?1049l[23;0;0t[?1l>[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# watch kubectl get pods
+[?2004l[?1049h[22;0;0t[1;49r(B[m[4l[?7h[H[2JEvery 2.0s: kubectl get pods[1;117Hip-172-31-42-16: Tue Oct 29 07:53:38 2024[3;1HNAME[3;27HREADY   STATUS    RESTARTS   AGE[4ddb-58cc845644-nlppn[27G1/1     Running   0[4;56H82s[5dredis-6878558678-hdlxd    1/1     Running   0[5;56H82s[6dresult-86bc6f7b5d-hstcd   1/1     Running   0[6;56H82s[7dvote-7d884dd585-gdf6g     1/1     Running   0[7;56H82s[8dworker-6fc5d5b668-82wzw   1/1     Running   0[8;56H82s[49;157H[1;151H40[4;57H4[5d4[6d4[7d4[8d4[49;157H[1;152H2[4;57H6[5d6[6d6[7d6[8d6[49;157H[1;152H4[4;57H9[5d9[6d9[7d9[8d9[49;157H[1;152H7[4;56H91[5d91[6d91[7d91[8d91[49;157H[1;152H9[4;57H3[5d3[6d3[7d3[8d3[49;157H[1;151H51[4;57H5[5d5[6d5[7d5[8d5[49;157H[1;152H3[4;57H7[5d7[6d7[7d7[8d7[49;157H[1;152H5[4;57H9[5d9[6d9[7d9[8d9[49;157H[1;152H7[4;56H101s[5;56H101s[6;56H101s[7;56H101s[8;56H101s[49;157H[1;152H9[4;58H3[5d3[6d3[7d3[8d3[49;157H[1;149H4:01[4;58H5[5d5[6d5[7d5[8d5[49;157H[1;152H3[4;58H7[5d7[6d7[7d7[8d7[49;157H[1;152H5[4;58H9[5d9[6d9[7d9[8d9[49;157H[1;152H7[4;57H11[5d11[6d11[7d11[8d11[49;157H[1;152H9[4;58H4[5d4[6d4[7d4[8d4[49;157H[1;151H12[4;58H6[5d6[6d6[7d6[8d6[49;157H[1;152H4[4;58H8[5d8[6d8[7d8[8d8[49;157H[1;152H6[4;56H2m[K[5d2m[K[6d2m[K[7d2m[K[8d2m[K[49;157H[1;152H8[4;58H2s[5d2s[6d2s[7d2s[8d2s[49;157H[1;151H20[4;58H4[5d4[6d4[7d4[8d4[49;157H[1;152H2[4;58H6[5d6[6d6[7d6[8d6[49;157H[1;152H4[4;58H8[5d8[6d8[7d8[8d8[49;157H[1;152H6[4;58H10s[5;58H10s[6;58H10s[7;58H10s[8;58H10s[49;157H[1;152H8[4;59H2[5d2[6d2[7d2[8d2[49;157H[1;151H30[4;59H4[5d4[6d4[7d4[8d4[49;157H[1;152H2[4;59H6[5d6[6d6[7d6[8d6[49;157H[1;152H4[4;59H9[5d9[6d9[7d9[8d9[49;157H[1;152H7[4;58H21[5d21[6d21[7d21[8d21[49;157H[1;152H9[4;59H3[5d3[6d3[7d3[8d3[49;157H[1;151H41[4;59H5[5d5[6d5[7d5[8d5[49;157H[1;152H3[4;59H7[5d7[6d7[7d7[8d7[49;157H[1;152H5[4;59H9[5d9[6d9[7d9[8d9[49;157H[1;152H7[4;58H31[5d31[6d31[7d31[8d31[49;157H[1;152H9[4;59H3[5d3[6d3[7d3[8d3[49;157H[1;151H51[4;59H5[5d5[6d5[7d5[8d5[49;157H[1;152H3[4;59H7[5d7[6d7[7d7[8d7[49;157H[1;152H5[4;59H9[5d9[6d9[7d9[8d9[49;157H[1;152H7[4;58H41[5d41[6d41[7d41[8d41[49;157H[1;152H9[4;59H3[5d3[6d3[7d3[8d3[49;157H[1;149H5:01[4;59H6[5d6[6d6[7d6[8d6[49;157H[1;152H4[4;59H8[5d8[6d8[7d8[8d8[49;157H[1;152H6[4;58H50[5d50[6d50[7d50[8d50[49;157H[1;152H8[4;59H2[5d2[6d2[7d2[8d2[49;157H[1;151H10[4;59H4[5d4[6d4[7d4[8d4[49;157H[1;152H2[4;59H6[5d6[6d6[7d6[8d6[49;157H[1;152H4[4;59H8[5d8[6d8[7d8[8d8[49;157H[1;152H6[4;56H3m[K[5d3m[K[6d3m[K[7d3m[K[8d3m[K[49;157H[1;152H8[4;58H2s[5d2s[6d2s[7d2s[8d2s[49;157H[1;151H20[4;58H4[5d4[6d4[7d4[8d4[49;157H[1;152H2[4;58H6[5d6[6d6[7d6[8d6[49;157H[1;152H4[4;58H9[5d9[6d9[7d9[8d9[49;157H[1;152H7[4;58H11s[5;58H11s[6;58H11s[7;58H11s[8;58H11s[49;157H[1;152H9[4;59H3[5d3[6d3[7d3[8d3[49;157H[1;151H31[4;59H5[5d5[6d5[7d5[8d5[49;157H[1;152H3[4;59H7[5d7[6d7[7d7[8d7[49;157H[1;152H5[4;59H9[5d9[6d9[7d9[8d9[49;157H[1;152H7[4;58H21[5d21[6d21[7d21[8d21[49;157H[1;152H9[4;59H3[5d3[6d3[7d3[8d3[49;157H[1;151H41[4;59H5[5d5[6d5[7d5[8d5[49;157H[1;152H3[4;59H7[5d7[6d7[7d7[8d7[49;157H[1;152H5[4;59H9[5d9[6d9[7d9[8d9[49;157H[1;152H7[4;58H31[5d31[6d31[7d31[8d31[49;157H[1;152H9[4;59H4[5d4[6d4[7d4[8d4[49;157H[49;1H[?1049l[23;0;0t[?1l>[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# kubectl get ser[K[Kvc
+[?2004lNAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+db           ClusterIP   10.96.95.156     <none>        5432/TCP         4m21s
+kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP          9m4s
+redis        ClusterIP   10.110.65.84     <none>        6379/TCP         4m21s
+result       NodePort    10.105.193.124   <none>        5001:31001/TCP   4m21s
+vote         NodePort    10.102.177.64    <none>        5000:31000/TCP   4m21s
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# kubectl get pods
+[?2004lNAME                      READY   STATUS    RESTARTS   AGE
+db-58cc845644-nlppn       1/1     Running   0          6m34s
+redis-6878558678-hdlxd    1/1     Running   0          6m34s
+result-86bc6f7b5d-hstcd   1/1     Running   0          6m34s
+vote-7d884dd585-gdf6g     1/1     Running   0          6m34s
+worker-6fc5d5b668-82wzw   1/1     Running   0          6m34s
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# vi [K[K[Kkubectl exec -it [7mvote-7d884dd585-gdf6g[27mvote-7d884dd585-gdf6g
+[?2004lerror: you must specify at least one command for the container
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# kubectl exec -it vote-7d884dd585-gdf6g[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kp[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kbash
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# history [K[K[K[K[K[K[K[Kexitk exec -it fortune-configmap-volume -c web-server -- sh- sh[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl exec -it [7mvote-7d884dd585-gdf6g[27mvote-7d884dd585-gdf6g bash
+[?2004lkubectl exec [POD] [COMMAND] is DEPRECATED and will be removed in a future version. Use kubectl exec [POD] -- [COMMAND] instead.
+[?2004hroot@vote-7d884dd585-gdf6g:/usr/local/app# ls -lrth
+[?2004ltotal 24K
+drwxr-xr-x 2 root root 4.0K Oct 10 11:51 templates
+drwxr-xr-x 3 root root 4.0K Oct 10 11:51 static
+-rw-r--r-- 1 root root   21 Oct 10 11:51 requirements.txt
+-rw-r--r-- 1 root root 1.4K Oct 10 11:51 app.py
+-rw-r--r-- 1 root root 1.1K Oct 10 11:51 Dockerfile
+drwxr-xr-x 2 root root 4.0K Oct 29 07:52 __pycache__
+[?2004hroot@vote-7d884dd585-gdf6g:/usr/local/app# vi [7mapp.py[27mapp.py
+[?2004lbash: vi: command not found
+[?2004hroot@vote-7d884dd585-gdf6g:/usr/local/app# exit
+[?2004lexit
+command terminated with exit code 127
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# 
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# 
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# 
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# 
+[?2004l[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# kubectl delete pod [7mvote-7d884dd585-gdf6g[27mvote-7d884dd585-gdf6g
+[?2004lpod "vote-7d884dd585-gdf6g" deleted
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# ls -lrth
+[?2004ltotal 36K
+-rw-r--r-- 1 root root 292 Oct 29 07:49 worker-deployment.yaml
+-rw-r--r-- 1 root root 192 Oct 29 07:49 vote-service.yaml
+-rw-r--r-- 1 root root 289 Oct 29 07:49 vote-deployment.yaml
+-rw-r--r-- 1 root root 195 Oct 29 07:49 result-service.yaml
+-rw-r--r-- 1 root root 299 Oct 29 07:49 result-deployment.yaml
+-rw-r--r-- 1 root root 152 Oct 29 07:49 redis-service.yaml
+-rw-r--r-- 1 root root 402 Oct 29 07:49 redis-deployment.yaml
+-rw-r--r-- 1 root root 146 Oct 29 07:49 db-service.yaml
+-rw-r--r-- 1 root root 401 Oct 29 07:49 db-deployment.yaml
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# kubectl get pods
+[?2004lNAME                      READY   STATUS    RESTARTS   AGE
+db-58cc845644-nlppn       1/1     Running   0          12m
+redis-6878558678-hdlxd    1/1     Running   0          12m
+result-86bc6f7b5d-hstcd   1/1     Running   0          12m
+vote-7d884dd585-msv4k     1/1     Running   0          69s
+worker-6fc5d5b668-82wzw   1/1     Running   0          12m
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# kubectl get pods -o wide
+[?2004lNAME                      READY   STATUS    RESTARTS   AGE    IP               NODE               NOMINATED NODE   READINESS GATES
+db-58cc845644-nlppn       1/1     Running   0          13m    192.168.31.69    ip-172-31-32-159   <none>           <none>
+redis-6878558678-hdlxd    1/1     Running   0          13m    192.168.31.103   ip-172-31-32-159   <none>           <none>
+result-86bc6f7b5d-hstcd   1/1     Running   0          13m    192.168.31.81    ip-172-31-32-159   <none>           <none>
+vote-7d884dd585-msv4k     1/1     Running   0          113s   192.168.31.105   ip-172-31-32-159   <none>           <none>
+worker-6fc5d5b668-82wzw   1/1     Running   0          13m    192.168.31.114   ip-172-31-32-159   <none>           <none>
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# [7m kubectl delete pod vote-7d884dd585-gdf6g[27m
+^C[?2004l[?2004h[?2004l
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# kubectl get pods -o wide[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl delete pos[Kd[7mworker-6fc5d5b668-82wzw[27m[1Pworker-6fc5d5b668-82wz[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K [7mworker-6fc5d5b668-82wzw[27mworker-6fc5d5b668-82wzw
+[?2004lpod "worker-6fc5d5b668-82wzw" deleted
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# kubectl gey[Kt pod
+[?2004lNAME                      READY   STATUS    RESTARTS   AGE
+db-58cc845644-nlppn       1/1     Running   0          14m
+redis-6878558678-hdlxd    1/1     Running   0          14m
+result-86bc6f7b5d-hstcd   1/1     Running   0          14m
+vote-7d884dd585-msv4k     1/1     Running   0          3m8s
+worker-6fc5d5b668-wqf6q   1/1     Running   0          25s
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# kubectl delete pod [7mdb-58cc845644-nlppn[27mdb-58cc845644-nlppn
+[?2004lpod "db-58cc845644-nlppn" deleted
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# kubectl delete pod db-58cc845644-nlppnget pod[K
+[?2004lNAME                      READY   STATUS    RESTARTS      AGE
+db-58cc845644-hs6nj       1/1     Running   0             46s
+redis-6878558678-hdlxd    1/1     Running   0             16m
+result-86bc6f7b5d-hstcd   1/1     Running   1 (16s ago)   16m
+vote-7d884dd585-msv4k     1/1     Running   0             4m50s
+worker-6fc5d5b668-wqf6q   1/1     Running   1 (16s ago)   2m7s
+[?2004h]0;root@ip-172-31-42-16: ~/example-voting-app/k8s-specificationsroot@ip-172-31-42-16:~/example-voting-app/k8s-specifications# 
